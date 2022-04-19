@@ -1,0 +1,11 @@
+.navigation-menu {
+  background-color: bisque;
+  padding: 1rem;
+}
+
+.navigation-menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

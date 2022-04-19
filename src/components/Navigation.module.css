@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+  background-color: aqua;
+}
+
+.navigation img {
+  height: 24px;
+  width: 24px;
+}
+
+.navigation p {
+  margin: 0;
+  padding: 0;
+}
