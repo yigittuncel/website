@@ -1,0 +1,16 @@
+.btn-text {
+  padding: 1rem 2rem;
+  color: #40443D;
+  border-radius: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all .4s;
+}
+
+
+.btn-text:hover,
+.btn-text:active {
+  color: #fff;
+  background-color: #7B61FF;
+}

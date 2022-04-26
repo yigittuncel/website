@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  color: #40443D;
+  flex-shrink: 0;
+}
+
+.line {
+  height: 50%;
+  width: .05rem;
+  background-color: #40443D;
+  margin: 0 2rem;
+}

@@ -1,0 +1,61 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph span {
+  text-decoration: underline;
+}
+
+.developer,
+.product {
+  width: 45%;
+}
+
+.developer {
+  align-self: flex-start;
+}
+
+.product{
+  align-self: flex-end;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons:last-child {
+  align-items: flex-end;
+}
+
+.line {
+  height: 6rem;
+  background-color: black;
+  width: .11rem;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow > svg {
+  margin-bottom: 1rem;
+  transform: translateY(-.2rem);
+}

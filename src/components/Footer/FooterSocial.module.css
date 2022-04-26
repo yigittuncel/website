@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social li {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  color: #40443D;
+  font-size: 1.25rem;
+}

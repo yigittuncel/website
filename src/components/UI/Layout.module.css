@@ -1,5 +1,8 @@
 .layout {
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 60rem;
+  flex: 1 0 auto;
 }

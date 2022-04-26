@@ -1,0 +1,21 @@
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.projects a {
+  font-size: 5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.projects a:hover {
+  text-decoration: none;
+  background-color: #4318FF;
+  color: #fff;
+}

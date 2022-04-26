@@ -1,0 +1,26 @@
+.btn-contained {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #4318FF;
+  color: #fff;
+  border-radius: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.btn-contained svg {
+  font-size: 1.25rem;
+  margin: 0 .5rem;
+}
+
+.btn-contained p {
+  margin-top: 0;
+}
+
+.btn-contained:hover,
+.btn-contained:active {
+  background-color: #7B61FF;
+}
