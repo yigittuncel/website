@@ -6,7 +6,7 @@
 }
 
 .social li {
-  width: 3rem;
+  width: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,5 +14,5 @@
 
 .social a {
   color: #40443D;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }

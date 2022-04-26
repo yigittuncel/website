@@ -5,17 +5,21 @@
   justify-content: center;
   list-style: none;
   gap: 2rem;
+  text-align: left;
 }
 
 .projects a {
+  display: inline-block;
+  margin-top: 1rem;
   font-size: 5rem;
+  padding: 1rem 2rem;
   color: #000;
   text-decoration: none;
+  transition: all .3s;
+  border-radius: 10rem;
 }
 
-
 .projects a:hover {
-  text-decoration: none;
   background-color: #4318FF;
   color: #fff;
 }

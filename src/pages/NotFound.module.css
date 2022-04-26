@@ -1,0 +1,9 @@
+.not-found {
+  text-align: center;
+  font-size: 3rem;
+  
+}
+
+.not-found p {
+  color: #4318FF;
+}

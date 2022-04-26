@@ -1,16 +1,32 @@
-import classes from './ProjectItem.module.css'
+import { NavLink } from "react-router-dom";
+import classes from "./ProjectItem.module.css";
+import ProjectItemInfos from "./ProjectItemInfos";
+import {AiOutlineArrowLeft} from 'react-icons/ai'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const ProjectItem = (props) => {
-  const {project} = props
+  if (!props.project) {
+    return (<p>No Project found</p>)
+  }
+  const { project } = props;
 
   return (
-    <div className={classes.project}>
-      <h1>{project.id}</h1>
-      <h1>{project.title}</h1>
-      <img src={`${project.images[0]}`} alt={project.id} ></img>
-      <img src={`${project.images[1]}`} alt={project.id} ></img>
-    </div>
-  )
-}
+    <>
+        <div className={classes.project}>
+          <div className={classes.images}>
+            <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>
+            <a href={project.projectUrl}>
+              <img className={classes.desktop} src={`${project.images[0]}`} alt={project.title}></img>
+              <img className={classes.mobile} src={`${project.images[1]}`} alt={project.title}></img>
+            </a>
+            <NavLink to={project.next}><AiOutlineArrowRight className={classes.arrow} /></NavLink>
+          </div>
+          <h3 className={classes.projectTitle}>{project.id.toUpperCase()} <span>{project.title}</span></h3>
+          <div className={classes.line}></div>
+          <ProjectItemInfos project={project}/>
+        </div>
+    </>
+  );
+};
 
 export default ProjectItem;

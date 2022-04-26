@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Projects from "./pages/Projects";
 import classes from "./App.module.css";
 import ProjectDetail from './pages/ProjectDetail'
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Layout>
       </Switch>
