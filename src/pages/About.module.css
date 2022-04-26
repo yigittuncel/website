@@ -69,3 +69,29 @@
   font-size: 1.8rem;
   font-weight: 100;
 }
+
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .design h3 {
+    text-align: center;
+  }
+
+  .develop-title {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .programs {
+    gap: 1rem;
+  }
+
+  .programs p {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}

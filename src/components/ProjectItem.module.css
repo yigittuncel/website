@@ -1,11 +1,13 @@
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
+
 .projectTitle {
   margin: 5rem 0;
+  align-self: center;
 }
 
 .project h3 {
@@ -28,9 +30,11 @@
   height: 1px;
   background-color: #aaa;
   margin-bottom: 5rem;
+  align-self: center;
 }
 
 .images {
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,5 +78,27 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .line {
+    width: 75%;
+    margin-bottom: 2.5rem;
+  }
+
+  .projectTitle {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    position: static;
   }
 }

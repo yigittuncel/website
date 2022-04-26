@@ -12,19 +12,19 @@ const ProjectItem = (props) => {
 
   return (
     <>
-        <div className={classes.project}>
-          <div className={classes.images}>
-            <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>
-            <a href={project.projectUrl}>
-              <img className={classes.desktop} src={`${project.images[0]}`} alt={project.title}></img>
-              <img className={classes.mobile} src={`${project.images[1]}`} alt={project.title}></img>
-            </a>
-            <NavLink to={project.next}><AiOutlineArrowRight className={classes.arrow} /></NavLink>
-          </div>
-          <h3 className={classes.projectTitle}>{project.id.toUpperCase()} <span>{project.title}</span></h3>
-          <div className={classes.line}></div>
-          <ProjectItemInfos project={project}/>
+      <div className={classes.project}>
+        <div className={classes.images}>
+          <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>
+          <a href={project.projectUrl}>
+            <img className={classes.desktop} src={`${project.images[0]}`} alt={project.title}></img>
+            <img className={classes.mobile} src={`${project.images[1]}`} alt={project.title}></img>
+          </a>
+          <NavLink to={project.next}><AiOutlineArrowRight className={classes.arrow} /></NavLink>
         </div>
+        <h3 className={classes.projectTitle}>{project.id.toUpperCase()} <span>{project.title}</span></h3>
+        <div className={classes.line}></div>
+        <ProjectItemInfos project={project}/>
+      </div>
     </>
   );
 };

@@ -24,3 +24,15 @@
 .btn-contained:active {
   background-color: #7B61FF;
 }
+
+
+@media (max-width: 992px) {
+  .btn-contained {
+    padding: 1rem 1.5rem;
+  }
+
+  .btn-contained svg {
+    font-size: 1rem;
+    margin: 0 .25rem 0 0rem;
+  }
+}

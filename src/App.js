@@ -14,28 +14,28 @@ function App() {
   return (
     <div className={classes["main-div"]}>
       <Navigation />
-      <Switch>
         <Layout>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects" exact>
-            <Projects />
-          </Route>
-          <Route path="/projects/:projectId">
-            <ProjectDetail />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
+          <Switch>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/projects" exact>
+                <Projects />
+              </Route>
+              <Route path="/projects/:projectId">
+                <ProjectDetail />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="*">
+                <NotFound />
+              </Route>
+          </Switch>
         </Layout>
-      </Switch>
       <Footer />
     </div>
   );

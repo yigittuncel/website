@@ -35,8 +35,8 @@ const projects = [
     collobrators: ['Yigit Tuncel'],
     images: ['/images/websiteDesktop.png', '/images/websiteMobile.png'],
     avatars: ['/images/yigit.png'],
-    description: 'Personal website of Yigit Tuncel. It showcases the fullstack web app projects.',
-    stacks: ['javascript', 'react', 'html', 'css', 'cloudinary', 'firebase'],
+    description: 'Personal website of Yigit Tuncel. It showcases the fullstack web app projects. It showcases the fullstack web app projects.',
+    stacks: ['react', 'javascript', 'react-router', 'Multi-Page SPA','html', 'css', 'firebase'],
     projectUrl: "https://www.yigittuncel.com",
     next: "/projects/refresh-your-style",
     previous: "/projects/city-stroll"

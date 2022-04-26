@@ -37,3 +37,20 @@
   border-bottom: .2rem solid #4318FF;
   font-weight: 700;
 }
+
+
+@media (max-width: 992px) {
+  .navigation-menu li {
+    width: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-menu ul {
+    font-size: 1rem;
+  }
+
+  .navigation-menu li {
+    width: 5rem;
+  }
+}

@@ -59,3 +59,31 @@
   margin-bottom: 1rem;
   transform: translateY(-.2rem);
 }
+
+
+@media (max-width: 992px) {
+  .home h1 {
+    font-size: 4rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+
+  .developer,
+  .product {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .developer,
+  .product {
+    width: 75%;
+  }
+}

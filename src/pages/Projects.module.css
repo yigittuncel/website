@@ -23,3 +23,22 @@
   background-color: #4318FF;
   color: #fff;
 }
+
+@media (max-width: 992px) {
+  .projects a {
+    margin-top: 1rem;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .projects a {
+    font-size: 2.5rem;
+  }
+
+  .projects ul {
+    gap: 1rem;
+  }
+}
