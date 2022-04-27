@@ -21,17 +21,18 @@
 .arrow {
   font-size: 2rem;
   font-weight: 100;
-  color: #aaa;
+  color: var(--font-footer-color);
   margin: 0 2rem
 }
 
 .line {
   width: 50%;
   height: 1px;
-  background-color: #aaa;
+  background-color: var(--font-footer-color);
   margin-bottom: 5rem;
   align-self: center;
 }
+
 
 .images {
   margin-top: 2rem;
@@ -40,6 +41,7 @@
   justify-content: center;
   position: relative;
   transition: all;
+  margin: 0 auto;
 }
 
 .mobile {
@@ -81,9 +83,9 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .line {
-    width: 75%;
+    width: 60%;
     margin-bottom: 2.5rem;
   }
 
@@ -100,5 +102,16 @@
   .mobile {
     width: 100%;
     position: static;
+  }
+
+  .projectTitle {
+    margin: 2.5rem 0 1rem 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .arrow {
+    font-size: 1.5rem;
   }
 }

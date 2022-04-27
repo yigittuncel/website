@@ -13,6 +13,6 @@
 }
 
 .social a {
-  color: #40443D;
+  color: var(--font-footer-color);
   font-size: 1rem;
 }

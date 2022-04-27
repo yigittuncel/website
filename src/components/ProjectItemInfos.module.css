@@ -1,8 +1,7 @@
 .infos {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  gap: 3rem 2rem;
   min-height: 12rem;
   margin-bottom: 5rem;
 }
@@ -37,7 +36,7 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: .25rem solid #fff;
+  border: .25rem solid var(--font-color-reverse);
   margin-right: -1rem;
 }
 
@@ -51,10 +50,10 @@
 
 .tech-stacks p {
   font-weight: 100;
-  color: #4318FF;
+  color: var(--button-contained-color);
   font-size: .75rem;
   padding: .25rem .5rem;
-  border: 1px solid #b6a6ff;
+  border: 1px solid var(--badge-outline-color);
   border-radius: 2rem;
 }
 
@@ -67,7 +66,6 @@
 
 @media (max-width: 1200px ) {
   .infos {
-    flex-direction: column;
-    gap: 3rem;
+    grid-template-columns: 1fr;
   }
 }

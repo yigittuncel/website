@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
-  border: 1px solid #7B61FF;
-  color: #7B61FF;
+  border: 1px solid var(--button-outlined-color);
+  color: var(--button-outlined-color);
 
   border-radius: 5rem;
   cursor: pointer;
@@ -15,16 +15,24 @@
 .btn-outlined svg {
   font-size: 1.25rem;
   margin: 0 .5rem;
+  color: var(--button-outlined-color)
 }
 
 .btn-outlined p {
   margin-top: 0;
+  color: var(--button-outlined-color)
 }
 
 .btn-outlined:hover,
 .btn-outlined:active {
-  background-color: #7B61FF;
-  color: #fff;
+  background-color: var(--button-outlined-color);
+}
+
+.btn-outlined:hover p,
+.btn-outlined:hover svg,
+.btn-outlined:active p,
+.btn-outlined:active svg {
+  color: var(--font-color-reverse);
 }
 
 @media (max-width: 992px) {

@@ -44,7 +44,7 @@
   height: 10rem;
   border-radius: 8rem;
   transition: all .6s;
-  border: 10px solid #fff;
+  border: 10px solid var(--font-color-reverse);
 }
 
 .photo:hover {

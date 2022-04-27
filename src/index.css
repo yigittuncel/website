@@ -1,4 +1,33 @@
+:root {
+  --font-color: #0C0D0B;
+  --font-footer-color: #40443D;
+  --font-color-reverse: #fff;
+  --background-color: #F2F4ED;
+  --button-contained-color: #4318FF;
+  --button-outlined-color: #7B61FF;
+  --badge-outline-color: #b6a6ff;
+}
+
+[data-theme="dark"] {
+  --font-color: #E3E1E1;
+  --font-footer-color: #cdcdcd;
+  --font-color-reverse: #25191C;
+  --background-color: #342B2D;
+  --button-contained-color: #FF0366;
+  --button-outlined-color: #FF7597;
+  --badge-outline-color: #FFC5CD;
+}
+
+p, h1, h2, h3, h4, h5, h6, svg, li {
+  color: var(--font-color);
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +38,7 @@ body {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F2F4ED;
+  background-color: var(--background-color);
 }
 
 code {

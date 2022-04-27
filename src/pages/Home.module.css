@@ -44,8 +44,8 @@
 
 .line {
   height: 6rem;
-  background-color: black;
-  width: .11rem;
+  background-color: var(--font-color);
+  width: .05rem;
 }
 
 .arrow {

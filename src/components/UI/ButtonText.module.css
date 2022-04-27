@@ -1,6 +1,6 @@
 .btn-text {
   padding: 1rem 2rem;
-  color: #40443D;
+  color: var(--font-footer-color);
   border-radius: 5rem;
   cursor: pointer;
   text-decoration: none;
@@ -11,6 +11,6 @@
 
 .btn-text:hover,
 .btn-text:active {
-  color: #fff;
-  background-color: #7B61FF;
+  color: var(--font-color-reverse);
+  background-color: var(--button-outlined-color);
 }

@@ -19,7 +19,7 @@ const ProjectItemInfos = (props) => {
   return (
     <div className={classes.infos}>
       <div className={classes.collobrators}>
-        <h3 className={classes.title}>{project.avatars.length > 1 ? 'collobrators' : 'collobrators'}</h3>
+        <h3 className={classes.title}>{project.avatars.length > 1 ? 'collobrators' : 'collobrator'}</h3>
         <ul className={classes.avatars}>
           {avatars}
         </ul>

@@ -2,6 +2,5 @@
   text-decoration: none;
   font-size: 3rem;
   font-weight: 700;
-  color: #4318FF;
-  margin: 0;
+  color: var(--button-contained-color);
 }
