@@ -3,6 +3,7 @@ import classes from "./ProjectItem.module.css";
 import ProjectItemInfos from "./ProjectItemInfos";
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import Helmet from 'react-helmet'
 
 const ProjectItem = (props) => {
   if (!props.project) {
@@ -13,6 +14,13 @@ const ProjectItem = (props) => {
   return (
     <>
       <div className={classes.project}>
+      <Helmet>
+        <title>{project.title}</title>
+        <meta
+          name="description"
+          content={project.description}
+        />
+      </Helmet>
         <div className={classes.images}>
           <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>
           <a href={project.projectUrl}>

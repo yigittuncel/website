@@ -2,10 +2,15 @@ import classes from "./About.module.css";
 import photo from "../assets/1564914639910.jpeg";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Helmet from "react-helmet";
 
 const About = () => {
   return (
     <div className={classes.about}>
+      <Helmet>
+        <title>About page</title>
+        <meta name="description" content="It is about me, design and development." />
+      </Helmet>
       <div className={classes["about-section"]}>
         <div className={classes.design}>
           <h3>design</h3>
