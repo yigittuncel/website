@@ -73,7 +73,7 @@ const projects = [
       "react",
       "javascript",
       "react-router-dom",
-      "Multi-Page SPA",
+      "single-page-application",
       "html",
       "css",
       "firebase",

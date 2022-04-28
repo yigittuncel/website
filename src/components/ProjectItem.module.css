@@ -10,12 +10,17 @@
   align-self: center;
 }
 
-.project h3 {
+.project a {
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.projectTitle {
   font-size: 1.5rem;
 }
 
-.project h3 span {
-  margin-left: 2rem;
+.projectTitle span {
+  margin: 0 1rem;
 }
 
 .arrow {
@@ -33,7 +38,6 @@
   align-self: center;
 }
 
-
 .images {
   margin-top: 2rem;
   display: flex;
@@ -47,7 +51,7 @@
 .mobile {
   width: 16%;
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   right: 9rem;
   animation: .5s ease-out 0s 1 slideInFromLeft;
   transition: all .5s;
@@ -92,6 +96,20 @@
   .projectTitle {
     margin: 2.5rem 0;
   }
+
+  .mobile {
+    width: 14%;
+    top: 4rem;
+    right: 10rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobile {
+    width: 14%;
+    top: 3rem;
+    right: 9rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -113,5 +131,13 @@
 @media (max-width: 576px) {
   .arrow {
     font-size: 1.5rem;
+  }
+
+  .projectTitle {
+    font-size: 1.25rem;
+  }
+
+  .projectTitle span {
+    margin: 0 1rem;
   }
 }

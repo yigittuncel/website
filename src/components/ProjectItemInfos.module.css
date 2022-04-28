@@ -40,8 +40,6 @@
   margin-right: -1rem;
 }
 
-
-
 .tech-stacks {
   display: flex;
   flex-wrap: wrap;
@@ -67,5 +65,11 @@
 @media (max-width: 1200px ) {
   .infos {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px ) {
+  .title {
+    font-size: 1.25rem;
   }
 }

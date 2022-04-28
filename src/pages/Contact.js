@@ -1,17 +1,9 @@
 import ButtonText from "../components/UI/ButtonText";
 import classes from "./Contact.module.css";
-import Helmet from "react-helmet";
 
 const Contact = () => {
   return (
     <div className={classes.contact}>
-      <Helmet>
-        <title>Contact page</title>
-        <meta
-          name="description"
-          content="You can find the contact informations on this page."
-        />
-      </Helmet>
       <h1>Get in touch</h1>
       <p className={classes.paragraph}>
         Do you wanna say hi or have any questions or feedbacks about my

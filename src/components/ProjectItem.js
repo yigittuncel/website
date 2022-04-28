@@ -3,7 +3,8 @@ import classes from "./ProjectItem.module.css";
 import ProjectItemInfos from "./ProjectItemInfos";
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import Helmet from 'react-helmet'
+
+import {FiExternalLink} from 'react-icons/fi'
 
 const ProjectItem = (props) => {
   if (!props.project) {
@@ -14,22 +15,17 @@ const ProjectItem = (props) => {
   return (
     <>
       <div className={classes.project}>
-      <Helmet>
-        <title>{project.title}</title>
-        <meta
-          name="description"
-          content={project.description}
-        />
-      </Helmet>
         <div className={classes.images}>
           <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>
-          <a href={project.projectUrl}>
+          <a href={project.projectUrl} target="_blank" rel="noreferrer noopener">
             <img className={classes.desktop} src={`${project.images[0]}`} alt={project.title}></img>
             <img className={classes.mobile} src={`${project.images[1]}`} alt={project.title}></img>
           </a>
           <NavLink to={project.next}><AiOutlineArrowRight className={classes.arrow} /></NavLink>
         </div>
-        <h3 className={classes.projectTitle}>{project.id.toUpperCase()} <span>{project.title}</span></h3>
+        <a href={project.projectUrl} target="_blank" rel="noreferrer noopener">
+          <h3 className={classes.projectTitle}>{project.id.toUpperCase()} <span>{project.title}</span> <FiExternalLink /> </h3>
+         </a>
         <div className={classes.line}></div>
         <ProjectItemInfos project={project}/>
       </div>
