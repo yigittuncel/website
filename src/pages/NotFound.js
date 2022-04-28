@@ -5,6 +5,7 @@ const NotFound = () => {
     <div className={classes['not-found']}>
       <p>404</p>
       <p>Page not found</p>
+
     </div>
   )
 }

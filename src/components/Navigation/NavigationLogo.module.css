@@ -4,3 +4,9 @@
   font-weight: 700;
   color: var(--button-contained-color);
 }
+
+@media (max-width: 480px) {
+  .navigation-logo {
+    font-size: 2.5rem;
+  }
+}

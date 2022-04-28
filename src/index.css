@@ -6,6 +6,8 @@
   --button-contained-color: #4318FF;
   --button-outlined-color: #7B61FF;
   --badge-outline-color: #b6a6ff;
+  --scrollbarBG: var(--background-color);
+  --thumbBG: var(--button-contained-color);
 }
 
 [data-theme="dark"] {
@@ -16,6 +18,8 @@
   --button-contained-color: #FF0366;
   --button-outlined-color: #FF7597;
   --badge-outline-color: #FFC5CD;
+  --scrollbarBG: var(--background-color);
+  --thumbBG: var(--button-contained-color);
 }
 
 p, h1, h2, h3, h4, h5, h6, svg, li {
@@ -24,7 +28,23 @@ p, h1, h2, h3, h4, h5, h6, svg, li {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 * {
   box-sizing: border-box;

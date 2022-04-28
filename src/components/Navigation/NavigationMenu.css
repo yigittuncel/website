@@ -3,6 +3,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigationMenu ul {
@@ -44,6 +45,71 @@
   font-weight: 700;
 }
 
+/* ***************************************************************** */
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-theme-wrapper svg {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 28px;
+  width: 55px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--button-contained-color);
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: var(--font-color-reverse);
+  bottom: 4px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 20px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:checked + .slider {
+  background-color: var(--button-contained-color)
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ******************************************************************* */
+
 
 @media (max-width: 992px) {
   .navigationMenu li {
@@ -61,15 +127,7 @@
   }
 }
 
-.navigation-toggle {
-  font-size: 1.5rem;
-  color: var(--font-color);
-}
-
 @media (max-width: 768px) {
-  .navigation-toggle {
-    font-size: 1rem;
-  }
 
   .navigationMenu {
     position: absolute;
@@ -98,8 +156,9 @@
     display: flex;
   }
 
-  .navigation-toggle {
-    display: none;
+  .navigationMenu.expanded .toggle-theme-wrapper {
+    margin-bottom: 2rem;
   }
+
 
 }

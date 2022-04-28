@@ -42,3 +42,13 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .projects a {
+    font-size: 1.75rem;
+  }
+
+  .projects ul {
+    gap: 1rem;
+  }
+}

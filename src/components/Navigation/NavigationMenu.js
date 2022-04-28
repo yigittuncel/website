@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { BsFillMoonFill } from "react-icons/bs";
+import { BsMoon } from "react-icons/bs";
+import { BsSun } from "react-icons/bs";
 import './NavigationMenu.css'
-
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -13,9 +13,26 @@ const setLight = () => {
   document.documentElement.setAttribute("data-theme", "light");
 };
 
-setLight();
-setDark()
+const storedTheme = localStorage.getItem("theme");
 
+const prefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const defaultDark =
+  storedTheme === "dark" || (storedTheme === null && prefersDark);
+
+if (defaultDark) {
+  setDark();
+}
+
+const toggleTheme = (e) => {
+  if (e.target.checked) {
+    setDark();
+  } else {
+    setLight();
+  }
+};
 
 const NavigationMenu = (props) => {
   const {isNavExpanded, setIsNavExpanded} = props
@@ -28,7 +45,19 @@ const NavigationMenu = (props) => {
         <li><NavLink to='/projects' activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>projects</NavLink></li>
         <li><NavLink to='/contact' activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>contact</NavLink></li>
       </ul>
-      <BsFillMoonFill className='navigation-toggle'/>
+      <div className="toggle-theme-wrapper">
+        <BsSun />
+        <label className="toggle-theme" htmlFor="checkbox">
+          <input
+            type="checkbox"
+            id="checkbox"
+            onChange={toggleTheme}
+            defaultChecked={defaultDark}
+          />
+          <div className="slider round"></div>
+        </label>
+        <BsMoon />
+      </div>
     </div>
   )
 }

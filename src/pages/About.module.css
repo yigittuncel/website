@@ -5,9 +5,13 @@
 
 .about-section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
+}
+
+.design, .develop {
+  flex: 1 1 0px
 }
 
 .skills h3 {
@@ -40,6 +44,7 @@
 }
 
 .photo {
+  align-self: center;
   width: 10rem;
   height: 10rem;
   border-radius: 8rem;
