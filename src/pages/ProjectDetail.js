@@ -78,7 +78,7 @@ const projects = [
       "css",
       "firebase",
     ],
-    projectUrl: "https://www.yigittuncel.com",
+    projectUrl: "https://yigit-tuncel.web.app",
     next: "/projects/refresh-your-style",
     previous: "/projects/city-stroll",
   }

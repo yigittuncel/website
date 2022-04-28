@@ -132,7 +132,7 @@ input:checked + .slider {
   .navigationMenu {
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 79px;
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 110px);
@@ -157,7 +157,7 @@ input:checked + .slider {
   }
 
   .navigationMenu.expanded .toggle-theme-wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
 
