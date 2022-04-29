@@ -8,7 +8,7 @@ const FooterSocial = () => {
   return (
     <ul className={classes.social}>
       <li>
-        <a href="mailto: abc@example.com">
+        <a href="mailto: info.yigittuncel@gmail.com">
           < MdOutlineEmail />
         </a>
       </li>

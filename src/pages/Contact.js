@@ -16,7 +16,7 @@ const Contact = () => {
       </p>
       <div className={classes.buttons}>
         <ButtonText
-          href="mailto: abc@example.com"
+          href="mailto: info.yigittuncel@gmail.com"
           target="_blank"
           rel="noreferrer noopener"
         >

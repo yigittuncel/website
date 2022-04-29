@@ -5,11 +5,38 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Helmet from "react-helmet";
 
 const About = () => {
+  const skillsArray = [
+    "Javascript",
+    "React",
+    "Redux",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "Ruby",
+    "Ruby on Rails",
+    "Github",
+    "Git",
+    "Heroku",
+    "Firebase",
+    "PostgreSQL",
+    "Figma",
+    "Adobe XD",
+    "Illustrator",
+    "Photoshop",
+  ];
+
+  const skills = (
+    skillsArray.map(skill => <p>{skill}</p>)
+  )
+
   return (
     <div className={classes.about}>
       <Helmet>
         <title>Yigit Tuncel | About</title>
-        <meta name="description" content="This page contains informations about me any my skills."/>
+        <meta
+          name="description"
+          content="This page contains informations about me any my skills."
+        />
       </Helmet>
       <div className={classes["about-section"]}>
         <div className={classes.design}>
@@ -48,21 +75,7 @@ const About = () => {
       <div className={classes.skills}>
         <h3>Skills</h3>
         <div className={classes.programs}>
-          <p>Javascript</p>
-          <p>React</p>
-          <p>Redux</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>Bootstrap</p>
-          <p>Ruby</p>
-          <p>Ruby on Rails</p>
-          <p>Github</p>
-          <p>Git</p>
-          <p>Heroku</p>
-          <p>PostgreSQL</p>
-          <p>SQlite</p>
-          <p>Figma</p>
-          <p>Adobe XD</p>
+          {skills}
         </div>
       </div>
     </div>
