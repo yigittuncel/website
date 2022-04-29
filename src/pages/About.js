@@ -2,10 +2,15 @@ import classes from "./About.module.css";
 import photo from "../assets/1564914639910.jpeg";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Helmet from "react-helmet";
 
 const About = () => {
   return (
     <div className={classes.about}>
+      <Helmet>
+        <title>Yigit Tuncel | About</title>
+        <meta name="description" content="This page contains informations about me any my skills."/>
+      </Helmet>
       <div className={classes["about-section"]}>
         <div className={classes.design}>
           <h3>design</h3>
@@ -48,6 +53,7 @@ const About = () => {
           <p>Redux</p>
           <p>HTML5</p>
           <p>CSS3</p>
+          <p>Bootstrap</p>
           <p>Ruby</p>
           <p>Ruby on Rails</p>
           <p>Github</p>

@@ -4,10 +4,18 @@ import {AiOutlineFire} from 'react-icons/ai'
 import ButtonOutlined from '../components/UI/ButtonOutlined';
 import {BiRightArrowAlt} from 'react-icons/bi'
 import {BiDownArrow} from 'react-icons/bi'
+import Helmet from 'react-helmet';
 
 const Home = () => {
   return (
     <>
+    <Helmet>
+      <title>Yigit Tuncel | Home</title>
+      <meta
+      name="description"
+      content="Hi everyone, this is my personal website. You can take a look at my projects and see how you contact to me."
+    />
+    </Helmet>
     <div className={classes.home}>
       <div className={classes.developer}>
         <h1>Hey, I am Yigit</h1>

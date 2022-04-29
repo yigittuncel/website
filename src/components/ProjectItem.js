@@ -5,6 +5,7 @@ import {AiOutlineArrowLeft} from 'react-icons/ai'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
 import {FiExternalLink} from 'react-icons/fi'
+import Helmet from "react-helmet";
 
 const ProjectItem = (props) => {
   if (!props.project) {
@@ -14,6 +15,9 @@ const ProjectItem = (props) => {
 
   return (
     <>
+      <Helmet>
+        <title>{project.title}</title>
+      </Helmet>
       <div className={classes.project}>
         <div className={classes.images}>
           <NavLink to={project.previous}><AiOutlineArrowLeft className={classes.arrow} /></NavLink>

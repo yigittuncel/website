@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Projects.module.css";
+import Helmet from "react-helmet"
 
 const projects = [
   {
@@ -22,6 +23,10 @@ const projects = [
 const Projects = () => {
   return (
     <div className={classes.projects}>
+      <Helmet>
+        <title>Yigit Tuncel | Projects</title>
+        <meta name="description" content="You can have a look at my selected projects."/>
+      </Helmet>
       <ul>
         {projects.map(project => (
           <li key={project.id}>
