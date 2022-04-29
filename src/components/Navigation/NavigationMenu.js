@@ -37,13 +37,19 @@ const toggleTheme = (e) => {
 const NavigationMenu = (props) => {
   const {isNavExpanded, setIsNavExpanded} = props
 
+  const closeNavHandler = () => {
+    if (isNavExpanded) {
+      setIsNavExpanded(false)
+    }
+  }
+
   return (
     <div className={ isNavExpanded ? "navigationMenu expanded" : "navigationMenu"}>
       <ul>
-        <li><NavLink to='/' exact activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>home</NavLink></li>
-        <li><NavLink to='/about' activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>about</NavLink></li>
-        <li><NavLink to='/projects' activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>projects</NavLink></li>
-        <li><NavLink to='/contact' activeClassName="active" onClick={() => setIsNavExpanded(prev => !prev)}>contact</NavLink></li>
+        <li><NavLink to='/' exact activeClassName="active" onClick={closeNavHandler}>home</NavLink></li>
+        <li><NavLink to='/about' activeClassName="active" onClick={closeNavHandler}>about</NavLink></li>
+        <li><NavLink to='/projects' activeClassName="active" onClick={closeNavHandler} >projects</NavLink></li>
+        <li><NavLink to='/contact' activeClassName="active" onClick={closeNavHandler}>contact</NavLink></li>
       </ul>
       <div className="toggle-theme-wrapper">
         <BsSun />

@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   const skills = (
-    skillsArray.map(skill => <p>{skill}</p>)
+    skillsArray.map(skill => <p key={skill}>{skill}</p>)
   )
 
   return (
