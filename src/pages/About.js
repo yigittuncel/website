@@ -11,6 +11,7 @@ const About = () => {
     "Redux",
     "HTML5",
     "CSS3",
+    "SCSS",
     "Bootstrap",
     "Ruby",
     "Ruby on Rails",
@@ -25,9 +26,7 @@ const About = () => {
     "Photoshop",
   ];
 
-  const skills = (
-    skillsArray.map(skill => <p key={skill}>{skill}</p>)
-  )
+  const skills = skillsArray.map((skill) => <p key={skill}>{skill}</p>);
 
   return (
     <div className={classes.about}>
@@ -48,8 +47,8 @@ const About = () => {
             bicycles to factories, residential buildings, shopping malls, etc.
             It is the nature of architecture, that you can experience various
             design principles and have a chance to implement them in the
-            different buildings, objects, or vehicles. Having a design
-            background makes me a successful frontend developer.
+            different buildings, objects, furnitures, or even vehicles. Having a
+            design background makes me a successful frontend developer.
           </p>
         </div>
         <img src={photo} alt="profile" className={classes.photo}></img>
@@ -64,7 +63,7 @@ const About = () => {
             design tools such as grasshopper and rhino. This made me interested
             in coding a lot. I joined the full-stack web development boot camp
             to achieve my goal to become a developer. After the program, I
-            discovered that I have a huge interest in frontend development,
+            discovered that I have a great interest in frontend development,
             which also fits my design background. I would like to work on
             projects which aim to provide good user interfaces and experiences.
             I am eager to keep learning modern technologies and keep updated
@@ -74,9 +73,7 @@ const About = () => {
       </div>
       <div className={classes.skills}>
         <h3>Skills</h3>
-        <div className={classes.programs}>
-          {skills}
-        </div>
+        <div className={classes.programs}>{skills}</div>
       </div>
     </div>
   );

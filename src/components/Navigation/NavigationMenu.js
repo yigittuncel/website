@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { BsMoon } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
-import './NavigationMenu.css'
+import "./NavigationMenu.css";
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -35,21 +35,56 @@ const toggleTheme = (e) => {
 };
 
 const NavigationMenu = (props) => {
-  const {isNavExpanded, setIsNavExpanded} = props
+  const { isNavExpanded, setIsNavExpanded } = props;
 
   const closeNavHandler = () => {
     if (isNavExpanded) {
-      setIsNavExpanded(false)
+      setIsNavExpanded(false);
     }
-  }
+  };
 
   return (
-    <div className={ isNavExpanded ? "navigationMenu expanded" : "navigationMenu"}>
+    <div
+      className={isNavExpanded ? "navigationMenu expanded" : "navigationMenu"}
+    >
       <ul>
-        <li><NavLink to='/' exact activeClassName="active" onClick={closeNavHandler}>home</NavLink></li>
-        <li><NavLink to='/about' activeClassName="active" onClick={closeNavHandler}>about</NavLink></li>
-        <li><NavLink to='/projects' activeClassName="active" onClick={closeNavHandler} >projects</NavLink></li>
-        <li><NavLink to='/contact' activeClassName="active" onClick={closeNavHandler}>contact</NavLink></li>
+        <li>
+          <NavLink
+            to="/"
+            exact
+            activeClassName="active"
+            onClick={closeNavHandler}
+          >
+            home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/about"
+            activeClassName="active"
+            onClick={closeNavHandler}
+          >
+            about
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/projects"
+            activeClassName="active"
+            onClick={closeNavHandler}
+          >
+            projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            activeClassName="active"
+            onClick={closeNavHandler}
+          >
+            contact
+          </NavLink>
+        </li>
       </ul>
       <div className="toggle-theme-wrapper">
         <BsSun />
@@ -65,7 +100,7 @@ const NavigationMenu = (props) => {
         <BsMoon />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default NavigationMenu;

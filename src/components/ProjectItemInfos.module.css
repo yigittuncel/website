@@ -1,6 +1,6 @@
 .infos {
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 5fr 16fr 8fr;
   gap: 3rem 2rem;
   min-height: 12rem;
   margin-bottom: 5rem;
@@ -20,6 +20,10 @@
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 300;
+}
+
+.duration {
+  margin-top: 1rem;
 }
 
 .title {

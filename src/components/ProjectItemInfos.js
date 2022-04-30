@@ -19,7 +19,7 @@ const ProjectItemInfos = (props) => {
   return (
     <div className={classes.infos}>
       <div className={classes.collobrators}>
-        <h3 className={classes.title}>{project.avatars.length > 1 ? 'collobrators' : 'collobrator'}</h3>
+        <h3 className={classes.title}>{project.avatars.length > 1 ? 'collaborators' : 'collaborator'}</h3>
         <ul className={classes.avatars}>
           {avatars}
         </ul>
@@ -30,6 +30,7 @@ const ProjectItemInfos = (props) => {
       <div className={classes.project}>
         <h3 className={classes.title}>about the project</h3>
         <p>{project.description}</p>
+        <p className={classes.duration}>This project is built in {project.duration}</p>
       </div>
       <div className={classes.stacks}>
         <h3 className={classes.title}>tech stacks used</h3>

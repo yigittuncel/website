@@ -15,6 +15,7 @@ const projects = [
     ],
     description:
       "A second-hand clothes marketplace focused on a personal brand with photos of the seller styling the items that they want to trade.",
+    duration: "2 weeks",
     stacks: [
       "javascript",
       "ruby on rails",
@@ -24,7 +25,7 @@ const projects = [
       "postgresql",
       "actioncable",
       "bootstrap",
-      "css",
+      "scss",
       "websocket",
       "cloudinary",
       "heroku",
@@ -46,6 +47,7 @@ const projects = [
     ],
     description:
       "A marketplace for booking tours. Users can create their own tours as a guide and see the reservations on their dashboard.",
+    duration: "1 week",
     stacks: [
       "javascript",
       "ruby on rails",
@@ -69,6 +71,7 @@ const projects = [
     avatars: ["/images/yigit.png"],
     description:
       "Personal website of Yigit Tuncel. It showcases the full-stack web app projects and the single page website developed with react and react-router-dom.",
+    duration: "1 week",
     stacks: [
       "react",
       "javascript",
@@ -81,7 +84,7 @@ const projects = [
     projectUrl: "https://yigittuncel.com",
     next: "/projects/refresh-your-style",
     previous: "/projects/city-stroll",
-  }
+  },
 ];
 
 const ProjectDetail = () => {
